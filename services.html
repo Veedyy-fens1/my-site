@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Қызметтер | VV Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+
+    <nav class="navbar solid-nav">
+        <a href="index.html" class="logo">
+            VV Studio
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Басты бет</a></li>
+            <li><a href="news.html">Жаңалықтар</a></li>
+            <li><a href="services.html" class="active">Қызметтер</a></li>
+            <li><a href="contact.html">Байланыс</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button id="dark-mode-toggle" class="theme-btn">🌙 Dark mode</button>
+        </div>
+    </nav>
+
+    <div class="page-container reveal">
+        <h1>Біздің қызметтер</h1>
+        <p class="section-text">Өзіңізге керек қызметті таңдаңыз</p>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active-filter" data-filter="all">Барлығы</button>
+            <button class="filter-btn" data-filter="web">Веб</button>
+            <button class="filter-btn" data-filter="design">Дизайн</button>
+            <button class="filter-btn" data-filter="support">Қолдау</button>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card" data-category="web">
+                <span>🌐</span>
+                <h3>Веб-сайт жасау</h3>
+                <p>Кәсіби және заманауи сайттар жасау.</p>
+            </div>
+
+            <div class="service-card" data-category="web">
+                <span>💻</span>
+                <h3>Бағдарламалау</h3>
+                <p>Frontend және backend шешімдер.</p>
+            </div>
+
+            <div class="service-card" data-category="design">
+                <span>🎨</span>
+                <h3>UI/UX дизайн</h3>
+                <p>Қолданушыға ыңғайлы және стильді интерфейс.</p>
+            </div>
+
+            <div class="service-card" data-category="support">
+                <span>🛠</span>
+                <h3>Техникалық қолдау</h3>
+                <p>Сайтты жүргізу, жаңарту және қателерді түзету.</p>
+            </div>
+
+            <div class="service-card" data-category="design">
+                <span>🖼</span>
+                <h3>Брендинг</h3>
+                <p>Логотип, түстер палитрасы және фирмалық стиль.</p>
+            </div>
+
+            <div class="service-card" data-category="support">
+                <span>📈</span>
+                <h3>Оптимизация</h3>
+                <p>Жылдамдық пен өнімділікті жақсарту.</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-link">← Артқа қайту</a>
+    </div>
+
+    <button id="scroll-top-btn" class="scroll-top-btn">↑</button>
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

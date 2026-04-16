@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <title>VV Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+
+    <header class="hero-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                VV
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Басты бет</a></li>
+                <li><a href="news.html">Жаңалықтар</a></li>
+                <li><a href="services.html">Қызметтер</a></li>
+                <li><a href="contact.html">Байланыс</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="dark-mode-toggle" class="theme-btn">🌙 Dark mode</button>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-text reveal">
+                <p class="hero-badge">Заманауи • Креатив • Жылдам</p>
+                <h1>
+                    Біздің веб-сайтқа қош келдіңіз
+                </h1>
+                <p class="hero-description">
+                    Біз стильді сайттар, ыңғайлы интерфейстер және пайдалы функциялары бар
+                    цифрлық шешімдер жасаймыз.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn primary-btn">Қызметтерді көру</a>
+                    <a href="contact.html" class="btn secondary-btn">Байланысу</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <h3 data-target="0">0</h3>
+                        <p>Жоба</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 data-target="0">0</h3>
+                        <p>Клиент</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 data-target="0">0</h3>
+                        <p>Жыл тәжірибе</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-side reveal">
+                <div class="glass-card contact-card">
+                    <h3>Байланыс ақпараты</h3>
+                    <p>📞 +7 777 123 45 67</p>
+                    <p>📍 Алматы қ.</p>
+                    <p>📧 info@mail.kz</p>
+                    <p>🕒 Дс–Жм: 09:00–18:00</p>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="section reveal">
+            <div class="section-head">
+                <h2>Негізгі бөлімдер</h2>
+                <p>Қажетті ақпаратты тез табу үшін төмендегі бөлімдерді пайдаланыңыз</p>
+            </div>
+
+            <div class="search-box">
+                <input type="text" id="card-search" placeholder="Бөлімді іздеу...">
+            </div>
+
+            <section class="grid-container" id="card-container">
+                <div class="card" data-title="жаңалықтар ақпарат жаңарту">
+                    <div class="card-icon">📰</div>
+                    <h2>Жаңалықтар</h2>
+                    <p>Соңғы жаңартулар, жаңа жобалар және маңызды хабарламалар.</p>
+                    <a href="news.html">Толығырақ оқу</a>
+                </div>
+
+                <div class="card" data-title="қызметтер веб дизайн программалау">
+                    <div class="card-icon">🛠</div>
+                    <h2>Қызметтер</h2>
+                    <p>Сайт жасау, дизайн, бағдарламалау және техникалық қолдау.</p>
+                    <a href="services.html">Көру</a>
+                </div>
+
+                <div class="card" data-title="байланыс хабарлама email телефон">
+                    <div class="card-icon">📞</div>
+                    <h2>Байланыс</h2>
+                    <p>Бізбен тез байланысып, сұрағыңызды қалдыра аласыз.</p>
+                    <a href="contact.html">Өту</a>
+                </div>
+            </section>
+        </section>
+
+        <section class="section game-section reveal">
+            <h2>🎮 Мини ойын: Санды тап</h2>
+            <p>1 мен 10 арасындағы санды табыңыз. Сізде 3 мүмкіндік бар.</p>
+
+            <div class="game-box">
+                <input type="number" id="guess-input" min="1" max="10" placeholder="Санды енгіз">
+                <button id="check-button">Тексеру</button>
+                <button id="reset-button">Қайта бастау</button>
+            </div>
+
+            <div class="game-info">
+                <p><strong>Қалған мүмкіндік:</strong> <span id="attempts-count">3</span></p>
+                <p><strong>Ұпай:</strong> <span id="score-count">0</span></p>
+            </div>
+
+            <p id="game-result">Ойын басталды!</p>
+        </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

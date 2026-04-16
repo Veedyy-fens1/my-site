@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Байланыс | VV Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+
+    <nav class="navbar solid-nav">
+        <a href="index.html" class="logo">
+            VV
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Басты бет</a></li>
+            <li><a href="news.html">Жаңалықтар</a></li>
+            <li><a href="services.html">Қызметтер</a></li>
+            <li><a href="contact.html" class="active">Байланыс</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button id="dark-mode-toggle" class="theme-btn">🌙 Dark mode</button>
+        </div>
+    </nav>
+
+    <div class="page-container reveal">
+        <h1>Байланыс</h1>
+
+        <div class="contact-grid">
+            <div class="contact-info-box">
+                <h2>Бізбен байланыс</h2>
+                <p>📞 Телефон: +7 777 123 45 67</p>
+                <p>📧 Email: info@mail.kz</p>
+                <p>📍 Мекенжай: Алматы қаласы</p>
+                <p>🕒 Жұмыс уақыты: 09:00 – 18:00</p>
+            </div>
+
+            <div class="contact-form-box">
+                <h2>Бізге жазыңыз</h2>
+
+                <form id="contact-form">
+                    <label for="name">Атыңыз:</label>
+                    <input type="text" id="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+
+                    <label for="message">Хабарлама:</label>
+                    <textarea id="message" rows="5" required></textarea>
+
+                    <button type="submit">Жіберу</button>
+                </form>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-link">← Артқа қайту</a>
+    </div>
+
+    <button id="scroll-top-btn" class="scroll-top-btn">↑</button>
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
